@@ -24,6 +24,7 @@ jobs:
           echo "custom_private=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/private.txt" >> $GITHUB_ENV
           echo "custom_ai=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/ai.txt" >> $GITHUB_ENV
           echo "custom_dev=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/dev.txt" >> $GITHUB_ENV
+          echo "custom_education=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/edu.txt" >> $GITHUB_ENV
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> $GITHUB_ENV
           echo "Loyalsoldier_proxy=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt" >> $GITHUB_ENV
           echo "Loyalsoldier_direct=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt" >> $GITHUB_ENV
@@ -82,7 +83,12 @@ jobs:
       - name: Generate dev.txt file
         run: |
            curl -sSL ${custom_dev} > dev.txt
-           curl -sSL ${custom_dev} | sed 's/^/DOMAIN-SUFFIX,/' > ruleset/dev.txt   
+           curl -sSL ${custom_dev} | sed 's/^/DOMAIN-SUFFIX,/' > ruleset/dev.txt
+
+      - name: Generate edu.txt file
+        run: |
+           curl -sSL ${custom_edu} > edu.txt
+           curl -sSL ${custom_edu} | sed 's/^/DOMAIN-SUFFIX,/' > ruleset/edu.txt    
 
 
   
