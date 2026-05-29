@@ -1,0 +1,12 @@
+# DOMAIN-SET chatgpt.txt
+
+.openai.com
+.chatgpt.com
+.oaistatic.com
+.oaiusercontent.com
+api.openai.com
+auth.openai.com
+platform.openai.com
+chat.openai.com
+.help.openai.com
+.status.openai.com
