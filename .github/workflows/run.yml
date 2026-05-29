@@ -73,10 +73,10 @@ jobs:
           curl -sSL ${Loyalsoldier_proxy} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' >> ruleset/proxy.txt
 
 
-      - name: Append custom AI rules  
+      - name: General ai.txt file  
         run: |
-          curl -sSL ${custom_ai} >> proxy.txt
-          curl -sSL ${custom_ai} | sed 's/^/DOMAIN-SUFFIX,/' >> ruleset/proxy.txt
+          curl -sSL ${custom_ai} > ai.txt
+          curl -sSL ${custom_ai} | sed 's/^/DOMAIN-SUFFIX,/' > ruleset/ai.txt
 
 
   
