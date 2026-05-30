@@ -236,6 +236,7 @@ jobs:
           else
             git add README.md
             git commit -m "chore: update README stats"
+            git pull --rebase --autostash origin master
             git push origin HEAD:master
           fi
 
