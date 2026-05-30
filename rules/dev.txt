@@ -11,12 +11,6 @@ private-user-images.githubusercontent.com
 codeload.github.com
 github.io
 
-anthropic.com
-claude.ai
-
-aistudio.google.com
-gemini.google.com
-
 youtube.com
 googlevideo.com
 ytimg.com
