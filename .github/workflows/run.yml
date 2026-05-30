@@ -252,7 +252,8 @@ jobs:
           else
             gh release create "${TAG_NAME}" --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
           fi
-          gh release upload "${TAG_NAME}" "${assets[@]}" --clobber
+          gh release upload "${TAG_NAME}" "${assets[@]}" 2>/dev/null || true
+          
 
       - name: Git push assets to "release" branch
         shell: bash
