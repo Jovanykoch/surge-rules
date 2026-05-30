@@ -1,0 +1,108 @@
+[General]
+loglevel = warning
+
+# DNS: prefer system DNS, with domestic public DNS as fallback for CN services.
+dns-server = system, 119.29.29.29, 223.5.5.5
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53, 1.1.1.1:53, 1.0.0.1:53
+always-real-ip = dns.msftncsi.com, *.msftconnecttest.com, *.srv.nintendo.net, *.stun.playstation.net, stun.*
+geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-only-cn-private.mmdb
+
+# Local and private networks should not be proxied.
+skip-proxy = 127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, fc00::/7, fe80::/10, localhost, *.local, *.ts.net, captive.apple.com
+exclude-simple-hostnames = true
+read-etc-hosts = true
+
+# Network test endpoints.
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+proxy-test-url = http://cp.cloudflare.com/generate_204
+proxy-test-udp = cp.cloudflare.com@1.1.1.1
+test-timeout = 3
+
+# LAN proxy access. Disable allow-wifi-access if you do not need other devices to use this iPhone as a proxy.
+http-listen = 0.0.0.0:8888
+socks5-listen = 0.0.0.0:8889
+wifi-access-http-port = 8888
+wifi-access-socks5-port = 8889
+allow-wifi-access = true
+proxy-restricted-to-lan = true
+
+# Optional Surge dashboard/API. Change the password before use.
+external-controller-access = CHANGE_ME_PASSWORD@0.0.0.0:6170
+http-api = CHANGE_ME_PASSWORD@0.0.0.0:6171
+http-api-web-dashboard = true
+
+show-error-page-for-reject = false
+block-quic = all-proxy
+udp-policy-not-supported-behaviour = DIRECT
+udp-priority = true
+wifi-assist = false
+
+[Replica]
+hide-apple-request = true
+hide-crash-reporter-request = true
+hide-udp = false
+keyword-filter-type = blacklist
+
+[Proxy]
+direct = Direct
+
+# Your return-to-CN/home WireGuard node. Fill in [WireGuard HomeServer] below.
+HomeServer = wireguard, section-name=HomeServer
+
+[Proxy Group]
+# Manual switch for overseas services such as AI, GitHub, Telegram, and streaming.
+PROXY = select, HK_AUTO, US_AUTO, HomeServer, direct
+
+# Main return-to-CN group. Use HomeServer first. Fall back to HK_AUTO if the home node is unstable.
+RETURN_CN = select, HomeServer, HK_AUTO, direct
+
+# Apple/iCloud sometimes work better direct, sometimes via return node depending on region/account.
+APPLE = select, RETURN_CN, direct, PROXY
+
+# Domestic apps and CN IP/domain traffic.
+CN = select, RETURN_CN, direct
+
+# Final fallback. Keep direct for light daily use; switch to PROXY if your local network blocks many overseas sites.
+FINAL_POLICY = select, direct, PROXY
+
+# Regional auto-test groups. These require your subscription/node names to include matching keywords.
+HK_AUTO = url-test, policy-regex-filter=港|HK|Hong|Hong Kong, interval=600, tolerance=50
+US_AUTO = url-test, policy-regex-filter=美|US|USA|States|United States, interval=600, tolerance=50
+
+[Rule]
+# 1. Privacy/local/private rules.
+RULE-SET,SYSTEM,direct
+DOMAIN-SET,https://jkoch14.me/surge-rules/private.txt,direct
+
+# 2. Ad/tracker blocking.
+DOMAIN-SET,https://jkoch14.me/surge-rules/reject.txt,REJECT
+
+# 3. Apple services. Kept in a separate group for easier troubleshooting.
+DOMAIN-SET,https://jkoch14.me/surge-rules/icloud.txt,APPLE
+DOMAIN-SET,https://jkoch14.me/surge-rules/apple.txt,APPLE
+
+# 4. AI and common overseas services.
+DOMAIN-SET,https://jkoch14.me/surge-rules/ai.txt,PROXY
+DOMAIN-SET,https://jkoch14.me/surge-rules/dev.txt,PROXY
+DOMAIN-SET,https://jkoch14.me/surge-rules/edu.txt,PROXY
+RULE-SET,https://jkoch14.me/surge-rules/telegramcidr.txt,PROXY,no-resolve
+
+# 5. Return-to-CN rules: domestic domains and mainland China IP ranges.
+DOMAIN-SET,https://jkoch14.me/surge-rules/direct.txt,CN
+RULE-SET,https://jkoch14.me/surge-rules/cncidr.txt,CN
+GEOIP,CN,CN
+
+# 6. Fallback.
+FINAL,FINAL_POLICY
+
+[Host]
+localhost = 127.0.0.1
+
+[WireGuard HomeServer]
+# Replace all placeholders with your real WireGuard values.
+private-key = YOUR_PRIVATE_KEY
+self-ip = 10.66.66.2
+self-ip-v6 = fd42:42:42::2
+dns-server = 1.1.1.1, 1.0.0.1
+mtu = 1420
+peer = (public-key = YOUR_PEER_PUBLIC_KEY, allowed-ips = "0.0.0.0/0, ::0/0", endpoint = YOUR_SERVER_IP:51820, preshared-key = YOUR_PRESHARED_KEY, keepalive = 25)
