@@ -245,7 +245,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "${TAG_NAME}" ./publish/* --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
+          set -euo pipefail
+          mapfile -t assets < <(find ./publish -type f -name '*.txt' | sort)
+          gh release create "${TAG_NAME}" "${assets[@]}" --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
 
       - name: Git push assets to "release" branch
         shell: bash
