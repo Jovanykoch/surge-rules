@@ -2,9 +2,8 @@ edu
 csun.edu
 jjc.edu
 spokane.edu
-login.microsoftonline.com
 login.live.com
-account.activedirectory.windowsazure.com
+windowsazure.com
 microsoftonline.com
 microsoftonline-p.com
 office.com
@@ -24,4 +23,5 @@ turnitin.com
 coursera.org
 edx.org
 outlook.office365.com
-
+login.microsoftonline.com
+account.activedirectory.
