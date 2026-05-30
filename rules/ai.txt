@@ -8,3 +8,4 @@ platform.openai.com
 chat.openai.com
 help.openai.com
 status.openai.com
+ios.chat.openai.com
