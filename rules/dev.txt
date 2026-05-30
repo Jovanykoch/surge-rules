@@ -1,9 +1,11 @@
 github.com
 api.github.com
+gist.github.com
 githubusercontent.com
-githubassets.com
-objects.githubusercontent.com
 raw.githubusercontent.com
+objects.githubusercontent.com
+release-assets.githubusercontent.com
+githubassets.com
 user-images.githubusercontent.com
 private-user-images.githubusercontent.com
 codeload.github.com
