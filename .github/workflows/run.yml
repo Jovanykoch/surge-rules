@@ -247,7 +247,12 @@ jobs:
         run: |
           set -euo pipefail
           mapfile -t assets < <(find ./publish -type f -name '*.txt' | sort)
-          gh release create "${TAG_NAME}" "${assets[@]}" --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
+          if gh release view "${TAG_NAME}" >/dev/null 2>&1; then
+            gh release edit "${TAG_NAME}" --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
+          else
+            gh release create "${TAG_NAME}" --title "${RELEASE_NAME}" --notes "Automated release ${TAG_NAME}"
+          fi
+          gh release upload "${TAG_NAME}" "${assets[@]}" --clobber
 
       - name: Git push assets to "release" branch
         shell: bash
