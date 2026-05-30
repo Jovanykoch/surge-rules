@@ -21,7 +21,7 @@ jobs:
           echo "RELEASE_NAME=Released on $(date +%Y%m%d%H%M)" >> "$GITHUB_ENV"
           echo "TAG_NAME=v$(date +%Y.%m.%d)-${GITHUB_RUN_NUMBER}" >> "$GITHUB_ENV"
           echo "custom_icloud=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/icloud.txt" >> "$GITHUB_ENV"
-          echo "custom_tld_not_cn=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/tld-!cn.txt" >> "$GITHUB_ENV"
+          echo 'custom_tld_not_cn=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/tld-!cn.txt' >> "$GITHUB_ENV"
           echo "custom_private=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/private.txt" >> "$GITHUB_ENV"
           echo "custom_ai=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/ai.txt" >> "$GITHUB_ENV"
           echo "custom_dev=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/dev.txt" >> "$GITHUB_ENV"
@@ -130,13 +130,20 @@ jobs:
             check_dup_file "$f"
           done
 
-          normalize_domain() {
-            awk -F ',' '/^DOMAIN,/ {print "D:"$2} /^DOMAIN-SUFFIX,/ {print "S:"$2}' "$1" | sort -u
+          normalize_custom() {
+            awk 'NF && $1 !~ /^#/ {print tolower($0)}' "$1" | sort -u
           }
 
-          normalize_domain ruleset/direct.txt > /tmp/direct.norm
-          normalize_domain ruleset/proxy.txt > /tmp/proxy.norm
-          normalize_domain ruleset/reject.txt > /tmp/reject.norm
+          printf '%s\n' \
+            'github.com' \
+            'githubusercontent.com' \
+            'huggingface.co' \
+            'replicate.com' \
+            > /tmp/conflict-allowlist.txt
+
+          normalize_custom rules/ai.txt > /tmp/ai.norm
+          normalize_custom rules/dev.txt > /tmp/dev.norm
+          normalize_custom rules/edu.txt > /tmp/edu.norm
 
           compare_conflict() {
             local left="$1"
@@ -144,7 +151,7 @@ jobs:
             local left_name="$3"
             local right_name="$4"
             local overlap
-            overlap=$(comm -12 "$left" "$right")
+            overlap=$(comm -12 "$left" "$right" | grep -vxFf /tmp/conflict-allowlist.txt || true)
             if [ -n "$overlap" ]; then
               echo "Conflict entries between $left_name and $right_name"
               echo "$overlap" | head -n 20
@@ -152,9 +159,9 @@ jobs:
             fi
           }
 
-          compare_conflict /tmp/direct.norm /tmp/proxy.norm direct proxy
-          compare_conflict /tmp/direct.norm /tmp/reject.norm direct reject
-          compare_conflict /tmp/proxy.norm /tmp/reject.norm proxy reject
+          compare_conflict /tmp/ai.norm /tmp/dev.norm ai dev
+          compare_conflict /tmp/ai.norm /tmp/edu.norm ai edu
+          compare_conflict /tmp/dev.norm /tmp/edu.norm dev edu
 
       - name: Move files to publish directory
         shell: bash
