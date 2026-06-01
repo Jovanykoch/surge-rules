@@ -1,6 +1,6 @@
 # 简介 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Loyalsoldier/surge-rules/total?logo=github) [![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Loyalsoldier/surge-rules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/Loyalsoldier/surge-rules)
 
-本项目生成适用于 [**Surge**](https://nssurge.com) 的规则集（DOMAIN-SET 和 RULE-SET）。使用 GitHub Actions 北京时间每天早上 6:30 自动构建，保证规则最新。
+This project generates rule sets (DOMAIN-SET and RULE-SET) for use with [**Surge**](https://nssurge.com). Use GitHub Actions to automatically build at 6:30 am Beijing time every day to ensure the latest rules.
 
 ## 说明
 
