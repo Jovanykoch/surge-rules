@@ -2,9 +2,9 @@
 
 This project generates rule sets (DOMAIN-SET and RULE-SET) for use with [**Surge**](https://nssurge.com). Use GitHub Actions to automatically build at 6:30 am Beijing time every day to ensure the latest rules.
 
-## 说明
+## illustrate
 
-本项目规则集（DOMAIN-SET 和 RULE-SET）的数据主要来源于项目 [@Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) 和 [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)；[`Apple`](https://github.com/Loyalsoldier/surge-rules/blob/release/apple.txt) 和 [`Google`](https://github.com/Loyalsoldier/surge-rules/blob/release/google.txt) 列表里的部分域名来源于项目 [@felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list)；中国大陆 IPv4 地址数据使用 [@17mon/china_ip_list](https://github.com/17mon/china_ip_list)。
+The data for this project's rule set (DOMAIN-SET and RULE-SET) mainly comes from the project [@Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) and [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community); [`Apple`](https://github.com/Loyalsoldier/surge-rules/blob/release/apple.txt) and [`Google`](https://github.com/Loyalsoldier/surge-rules/blob/release/google.txt) Some domain names in the list come from projects [@felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list); Mainland China IPv4 address data uses [@17mon/china_ip_list](https://github.com/17mon/china_ip_list).
 
 ## Rule file address and usage
 
