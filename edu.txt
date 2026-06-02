@@ -11,7 +11,6 @@ office.com
 office365.com
 microsoft365.com
 outlook.com
-hotmail.com
 outlook.office.com
 teams.microsoft.com
 msauth.net

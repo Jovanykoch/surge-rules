@@ -11,7 +11,6 @@ DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,microsoft365.com
 DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,outlook.office.com
 DOMAIN-SUFFIX,teams.microsoft.com
 DOMAIN-SUFFIX,msauth.net
