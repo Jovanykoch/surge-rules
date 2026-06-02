@@ -26,5 +26,4 @@ DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spotifycdn.com
-DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,gmail.com
