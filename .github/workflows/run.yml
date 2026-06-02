@@ -166,9 +166,10 @@ jobs:
       - name: Move files to publish directory
         shell: bash
         run: |
+          set -euo pipefail
           mkdir -p publish
           cp *.txt ./publish/
-          mv ruleset ./publish/
+          cp -r ruleset ./publish/
 
       - name: Update README statistics
         shell: bash
