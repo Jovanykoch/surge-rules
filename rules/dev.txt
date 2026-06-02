@@ -31,3 +31,6 @@ workers.dev
 spotify.com
 scdn.co
 spotifycdn.com
+
+hotmail.com
+outlook.com
