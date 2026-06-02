@@ -33,4 +33,3 @@ scdn.co
 spotifycdn.com
 
 hotmail.com
-tng.com
