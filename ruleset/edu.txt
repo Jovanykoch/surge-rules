@@ -2,6 +2,7 @@ DOMAIN-SUFFIX,edu
 DOMAIN-SUFFIX,csun.edu
 DOMAIN-SUFFIX,jjc.edu
 DOMAIN-SUFFIX,spokane.edu
+DOMAIN-SUFFIX,liberty.edu
 DOMAIN-SUFFIX,login.live.com
 DOMAIN-SUFFIX,windowsazure.com
 DOMAIN-SUFFIX,microsoftonline.com
