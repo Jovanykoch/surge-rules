@@ -33,3 +33,6 @@ scdn.co
 spotifycdn.com
 
 gmail.com
+
+jkoch14.me
+santag.tech
