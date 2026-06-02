@@ -32,5 +32,4 @@ spotify.com
 scdn.co
 spotifycdn.com
 
-hotmail.com
 gmail.com
