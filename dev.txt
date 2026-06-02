@@ -32,4 +32,4 @@ spotify.com
 scdn.co
 spotifycdn.com
 
-hotmail.com
+m.hotmail.com
