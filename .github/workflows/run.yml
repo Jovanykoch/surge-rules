@@ -226,17 +226,23 @@ jobs:
 
           mv /tmp/README.md.new README.md
 
-      - name: Commit README statistics and pages ai files
+      - name: Commit README statistics and generated files
         shell: bash
         run: |
           set -euo pipefail
+
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet README.md ai.txt ruleset/ai.txt; then
-            echo "README and AI files are up to date"
+
+          # Stage generated files first. This avoids git diff failing on paths
+          # that may not exist in the current commit yet.
+          git add README.md ai.txt dev.txt edu.txt ruleset/ai.txt ruleset/dev.txt ruleset/edu.txt
+
+          # Commit only when staged changes exist.
+          if git diff --cached --quiet; then
+            echo "README and generated files are up to date"
           else
-            git add README.md ai.txt ruleset/ai.txt
-            git commit -m "chore: update README stats and AI files"
+            git commit -m "chore: update README stats and generated files"
             git pull --rebase --autostash origin master
             git push origin HEAD:master
           fi
