@@ -13,7 +13,6 @@ github.io
 
 youtube.com
 googlevideo.com
-googleapis.com
 ytimg.com
 google.com
 
