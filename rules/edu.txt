@@ -2,6 +2,7 @@ edu
 csun.edu
 jjc.edu
 spokane.edu
+liberty.edu
 login.live.com
 windowsazure.com
 microsoftonline.com
