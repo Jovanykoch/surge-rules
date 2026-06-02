@@ -15,7 +15,6 @@ youtube.com
 googlevideo.com
 ytimg.com
 google.com
-google
 
 huggingface.co
 replicate.com
