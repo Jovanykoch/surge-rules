@@ -50,17 +50,48 @@ Thank you to the following projects for data and contributions:
 [![Stargazers over time](https://starchart.cc/Loyalsoldier/surge-rules.svg)](https://starchart.cc/Loyalsoldier/surge-rules)
 
 <!-- STATS:START -->
-## Rule Statistics (Auto-generated)
+## 规则统计（自动生成）
 
 ### DOMAIN-SET
 
-| File | Entries |
+| 文件 | 条目数 |
 | --- | ---: |
-| direct.txt | 158 |
-| proxy.txt | 163 | 
-(Statistics are translated.)
+| \ | 158 |
+| \ | 163 |
+| \ | 5680 |
+| \ | 28 |
+| \ | 113326 |
+| \ | 27 |
+| \ | 4251 |
+| \ | 112 |
+| \ | 10 |
+| \ | 52 |
+| \ | 130 |
+| \ | 26360 |
+| \ | 174407 |
+| \ | 12 |
+| \ | 831 |
 
-<!-- STATS: END -->
+### RULE-SET
+
+| 文件 | 条目数 |
+| --- | ---: |
+| \ | 158 |
+| \ | 163 |
+| \ | 5680 |
+| \ | 28 |
+| \ | 113326 |
+| \ | 27 |
+| \ | 4251 |
+| \ | 112 |
+| \ | 10 |
+| \ | 52 |
+| \ | 130 |
+| \ | 26360 |
+| \ | 174407 |
+| \ | 12 |
+| \ | 831 |
+<!-- STATS:END -->
 <!-- STATS:START -->
 ## 规则统计（自动生成）
 
