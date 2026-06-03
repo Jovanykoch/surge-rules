@@ -26,3 +26,4 @@ DOMAIN-SUFFIX,edx.org
 DOMAIN-SUFFIX,outlook.office365.com
 DOMAIN-SUFFIX,login.microsoftonline.com
 DOMAIN-SUFFIX,account.activedirectory.
+DOMAIN-SUFFIX,shibboleth.csun.edu
