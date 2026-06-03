@@ -3,6 +3,7 @@ chatgpt.com
 oaistatic.com
 oaiusercontent.com
 openaiapi-site.azureedge.net
+auth.openai.com
 identrust.com
 auth0.com
 chat.openai.com
