@@ -26,3 +26,4 @@ edx.org
 outlook.office365.com
 login.microsoftonline.com
 account.activedirectory.
+shibboleth.csun.edu
