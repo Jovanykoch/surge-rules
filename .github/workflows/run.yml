@@ -23,7 +23,7 @@ jobs:
           echo "custom_icloud=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/icloud.txt" >> "$GITHUB_ENV"
           echo 'custom_tld_not_cn=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/tld-!cn.txt' >> "$GITHUB_ENV"
           echo "custom_private=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/private.txt" >> "$GITHUB_ENV"
-          echo "custom_ai=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/ai.txt" >> "$GITHUB_ENV"
+          echo "custom_ai=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/openai.txt" >> "$GITHUB_ENV"
           echo "custom_dev=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/dev.txt" >> "$GITHUB_ENV"
           echo "custom_edu=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/edu.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> "$GITHUB_ENV"
@@ -71,12 +71,12 @@ jobs:
           grep -Ev '^(regexp|keyword):' /tmp/proxy.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/proxy.txt
           grep -Ev '^(regexp|keyword|full):' /tmp/proxy.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/proxy.txt
 
-          cp rules/ai.txt ai.txt
+          cp rules/ai.txt openai.txt
 
-          echo "===== AI ====="
-          cat ai.txt
+          echo "===== OPENAI ====="
+          cat openai.txt
 
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' ai.txt > ruleset/ai.txt
+          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' openai.txt > ruleset/openai.txt
 
           cp rules/dev.txt dev.txt
 
@@ -155,7 +155,7 @@ jobs:
             'replicate.com' \
             > /tmp/conflict-allowlist.txt
 
-          normalize_custom rules/ai.txt > /tmp/ai.norm
+          normalize_custom rules/openai.txt > /tmp/openai.norm
           normalize_custom rules/dev.txt > /tmp/dev.norm
           normalize_custom rules/edu.txt > /tmp/edu.norm
 
@@ -173,8 +173,8 @@ jobs:
             fi
           }
 
-          compare_conflict /tmp/ai.norm /tmp/dev.norm ai dev
-          compare_conflict /tmp/ai.norm /tmp/edu.norm ai edu
+          compare_conflict /tmp/openai.norm /tmp/dev.norm openai dev
+          compare_conflict /tmp/openai.norm /tmp/edu.norm openai edu
           compare_conflict /tmp/dev.norm /tmp/edu.norm dev edu
 
       - name: Move files to publish directory
