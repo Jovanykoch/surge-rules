@@ -45,7 +45,6 @@ twilio.com
 vonage.com
 
 # Database & Backend Services
-firebase.google.com
 mongodb.com
 supabase.com
 
