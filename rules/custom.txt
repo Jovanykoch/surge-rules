@@ -10,8 +10,8 @@ aws-api.github.com
 # Authentication & Security Services
 auth.github.com
 github.com
-firebase.google.com
 firebaseapp.com
+firebase.google.com
 googleapis.com
 
 # CDN & Static Content
