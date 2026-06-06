@@ -71,7 +71,7 @@ jobs:
           grep -Ev '^(regexp|keyword):' /tmp/proxy.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/proxy.txt
           grep -Ev '^(regexp|keyword|full):' /tmp/proxy.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/proxy.txt
 
-          cp rules/ai.txt openai.txt
+          cp rules/openai.txt openai.txt
 
           echo "===== OPENAI ====="
           cat openai.txt
