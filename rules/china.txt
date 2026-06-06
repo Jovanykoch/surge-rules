@@ -1,1 +1,172 @@
+# China Mainland Services
+
+cn
+
+# Chinese Search Engines
+
+baidu.com
+bdstatic.com
+baidubce.com
+sogou.com
+soso.com
+sm.cn
+so.com
+
+# Chinese Portals & News
+
+sina.com.cn
+sina.cn
+ifeng.com
+163.com
+126.com
+yeah.net
+sohu.com
+people.com.cn
+cctv.com
+
+# Tencent Services
+
+qq.com
+gtimg.com
+qpic.cn
+weixin.qq.com
+wechat.com
+wechatapp.com
+tencent.com
+myqcloud.com
+qcloud.com
+
+# Alibaba Services
+
+alibaba.com
+alibabacloud.com
+aliyun.com
+alicdn.com
+taobao.com
+tmall.com
+1688.com
+alipay.com
+alipayobjects.com
+etao.com
+
+# JD Services
+
+jd.com
+jd.hk
+jcloud.com
+360buyimg.com
+
+# ByteDance Services
+
+bytedance.com
+byteimg.com
+douyin.com
+douyinpic.com
+douyincdn.com
+ixigua.com
+toutiao.com
+snssdk.com
+
+# Chinese Video Platforms
+
+bilibili.com
+bilivideo.com
+biliapi.net
+iqiyi.com
+iq.com
+youku.com
+kuwo.cn
+mgtv.com
+pptv.com
+le.com
+
+# Chinese Music Platforms
+
 music.163.com
+126.net
+kuwo.cn
+kugou.com
+kugou.net
+qqmusic.qq.com
+
+# Chinese Cloud Storage
+
+pan.baidu.com
+yunpan.cn
+115.com
+aliyundrive.com
+aliyundrive.net
+
+# Chinese Social Platforms
+
+weibo.com
+weibo.cn
+xiaohongshu.com
+xhscdn.com
+zhihu.com
+zhimg.com
+douban.com
+
+# Chinese Office & Productivity
+
+wps.cn
+kingsoft.com
+yuque.com
+lanhuapp.com
+
+# Huawei Services
+
+huawei.com
+hicloud.com
+huaweicloud.com
+vmall.com
+
+# Xiaomi Services
+
+xiaomi.com
+mi.com
+miui.com
+
+# OPPO Services
+
+oppo.com
+heytap.com
+realme.com
+
+# Vivo Services
+
+vivo.com
+
+# Chinese Developer Platforms
+
+gitee.com
+coding.net
+oschina.net
+
+# Chinese Education & Government
+
+edu.cn
+gov.cn
+
+# Chinese CDN Providers
+
+chinacache.com
+wangsu.com
+wscloudcdn.com
+dnspod.com
+dnsv1.com
+
+# Chinese Payment Services
+
+tenpay.com
+unionpay.com
+95516.com
+cmbchina.com
+
+# Chinese Travel Services
+
+ctrip.com
+trip.com
+qunar.com
+fliggy.com
+12306.cn
