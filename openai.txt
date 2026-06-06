@@ -1,40 +1,27 @@
-# OpenAI / ChatGPT + US School SSO
-# Surge format
-# Usage:
-# RULE-SET,https://your-rule-set-url/openai-csun-sso.list,US-SFO-01
-
-# OpenAI Core
-chatgpt.com
-openai.com
-oaistatic.com
-oaiusercontent.com
-DOMAIN-KEYWORD,openai
-
-# OpenAI auth / anti-abuse / feature gate
-auth0.com
-arkoselabs.com
-client-api.arkoselabs.com
+browser-intake-datadoghq.com
+static.cloudflareinsights.com
+ai.com
+algolia.net
 api.statsig.com
+auth0.com
+chatgpt.com
+chatgpt.livekit.cloud
+client-api.arkoselabs.com
 events.statsigapi.net
 featuregates.org
-launchdarkly.com
-
-# ChatGPT voice / realtime
-chatgpt.livekit.cloud
 host.livekit.cloud
+identrust.com
+intercom.io
+intercomcdn.com
+launchdarkly.com
+oaistatic.com
+oaiusercontent.com
+observeit.net
+segment.io
+sentry.io
+stripe.com
 turn.livekit.cloud
-
-# CSUN / school SSO
-csun.edu
-
-# Microsoft login / university SSO
-login.microsoftonline.com
-microsoftonline.com
-msauth.net
-msftauth.net
-msftidentity.com
-
-# Google login fallback
-accounts.google.com
-googleusercontent.com
-gstatic.com
+openai
+24.199.123.28/32
+64.23.132.171/32
+20473
