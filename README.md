@@ -77,45 +77,45 @@ Thank you to the following projects for data and contributions:
 [![Stargazers over time](https://starchart.cc/Loyalsoldier/surge-rules.svg)](https://starchart.cc/Loyalsoldier/surge-rules)
 
 <!-- STATS:START -->
-## Rule Statistics (Auto-generated)
+## 规则统计（自动生成）
 
 ### DOMAIN-SET
 
-| File | Entries |
+| 文件 | 条目数 |
 | --- | ---: |
-| direct.txt | 163 |
-| proxy.txt | 5637 |
-| cn.txt | 31 |
-| gfwlist.txt | 113092 |
-| greatfire.txt | 32 |
-| piracy.txt | 4252 |
-| private.txt | 112 |
-| localhost.txt | 10 |
-| bogus-nxdomain.txt | 52 |
-| cdn.txt | 18 |
-| apple-cn.txt | 130 |
-| google-cn.txt | 26541 |
-| geolocation-cn.txt | 169994 |
-| geolocation-!cn.txt | 12 |
-| total | 831 |
+| \ | 163 |
+| \ | 5637 |
+| \ | 31 |
+| \ | 113092 |
+| \ | 32 |
+| \ | 4252 |
+| \ | 112 |
+| \ | 10 |
+| \ | 52 |
+| \ | 18 |
+| \ | 130 |
+| \ | 26541 |
+| \ | 169994 |
+| \ | 12 |
+| \ | 831 |
 
 ### RULE-SET
 
-| File | Entries |
+| 文件 | 条目数 |
 | --- | ---: |
-| direct.list | 163 |
-| proxy.list | 5637 |
-| cn.list | 31 |
-| gfwlist.list | 113092 |
-| greatfire.list | 32 |
-| piracy.list | 4252 |
-| private.list | 112 |
-| localhost.list | 10 |
-| bogus-nxdomain.list | 52 |
-| cdn.list | 18 |
-| apple-cn.list | 130 |
-| google-cn.list | 26541 |
-| geolocation-cn.list | 169994 |
-| geolocation-!cn.list | 12 |
-| total | 831 |
+| \ | 163 |
+| \ | 5637 |
+| \ | 31 |
+| \ | 113092 |
+| \ | 32 |
+| \ | 4252 |
+| \ | 112 |
+| \ | 10 |
+| \ | 52 |
+| \ | 18 |
+| \ | 130 |
+| \ | 26541 |
+| \ | 169994 |
+| \ | 12 |
+| \ | 831 |
 <!-- STATS:END -->
