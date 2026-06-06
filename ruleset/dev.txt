@@ -27,5 +27,6 @@ DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spotifycdn.com
 DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,jkoch14.me
 DOMAIN-SUFFIX,santag.tech

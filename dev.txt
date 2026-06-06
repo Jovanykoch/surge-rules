@@ -33,6 +33,7 @@ scdn.co
 spotifycdn.com
 
 gmail.com
+hotmail.com
 
 jkoch14.me
 santag.tech
