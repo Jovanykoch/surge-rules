@@ -24,8 +24,6 @@ chatgpt.livekit.cloud
 host.livekit.cloud
 turn.livekit.cloud
 
-# CSUN / school SSO
-csun.edu
 
 # Google login fallback
 accounts.google.com
