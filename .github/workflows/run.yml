@@ -250,7 +250,7 @@ jobs:
 
           # Stage generated files first. This avoids git diff failing on paths
           # that may not exist in the current commit yet.
-          git add README.md ai.txt dev.txt edu.txt ruleset/ai.txt ruleset/dev.txt ruleset/edu.txt
+          git add README.md openai.txt dev.txt edu.txt ruleset/openai.txt ruleset/dev.txt ruleset/edu.txt
 
           # Commit only when staged changes exist.
           if git diff --cached --quiet; then
