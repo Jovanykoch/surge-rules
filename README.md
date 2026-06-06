@@ -1,10 +1,10 @@
-# Introduction ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Loyalsoldier/surge-rules/total?logo=github) [![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Loyalsoldier/surge-rules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/Loyalsoldier/surge-rules)
+# Introduction ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Loyalsoldier/surge-rules/total?logo=github) [![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Loyalsoldier/surge-rules/stats/6m?dynamic=json)](https://www.jsdelivr.com/package/gh/Loyalsoldier/surge-rules)
 
-This project generates rule sets (DOMAIN-SET and RULE-SET) for use with [**Surge**](https://nssurge.com). GitHub Actions are used to automatically build the rules daily at 6:30 am Beijing time to ensure their accuracy.
+This project generates rule sets (DOMAIN-SET and RULE-SET) for use with [**Surge**](https://nssurge.com). GitHub Actions are used to automatically build the rules daily at 6:30 am Beijing time to ensure accurate and timely data.
 
 ## Description
 
-The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primarily sourced from the following projects: [@Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat) and [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community). Specific domains in the [`Apple`](https://github.com/Loyalsoldier/surge-rules/blob/release/apple.txt) and [`Google`](https://github.com/Loyalsoldier/surge-rules/blob/release/google.txt) lists are sourced from [@felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list). IPv4 address data for mainland China uses [@17mon/china_ip_list](https://github.com/17mon/china_ip_list).
+The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primarily sourced from the following projects: [@Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat), [@v2fly/domain-list-community](https://github.com/v2fly/domain-list-community), and [@felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list). The data is processed and compiled automatically to generate the rule sets.
 
 ## Rule File Links and Usage
 
@@ -20,20 +20,47 @@ The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primaril
 - **Proxy Domain List proxy.txt**:
   - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt)
   - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt)
+- **CN Domain List cn.txt**:
+  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cn.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cn.txt)
+  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cn.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cn.txt)
+- **GFWlist gfwlist.txt**:
+  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfwlist.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfwlist.txt)
+  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/gfwlist.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/gfwlist.txt)
 
-(The rest of the domain sets are translated in a similar fashion. Include links as is.)
+#### RULE-SET:
 
-[...]
+- **Direct Connection Rules direct.list**:
+  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list)
+  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.list](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.list)
+- **Proxy Rules proxy.list**:
+  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list)
+  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.list](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.list)
 
 ## Usage Guide
 
-For detailed usage instructions of Surge, see the [official manual](https://manual.nssurge.com). To use the rule sets from this project, simply add the following rules into your Surge configuration file.
+For detailed usage instructions of Surge, see the [official manual](https://manual.nssurge.com). To use the rule sets from this project, simply add the following rules into your Surge configuration file:
 
-[...]
+**Whitelist Mode (Proxy first, then direct):**
 
-(The usage rules for "whitelist mode" and "blacklist mode" are translated as is. Structured rules are presented in English with similar formatting to their Chinese counterparts.)
+```ini
+# Direct connection rules
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list,DIRECT
+# Proxy rules
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list,PROXY
+# Default rule
+FINAL,DIRECT
+```
 
-[...]
+**Blacklist Mode (Direct first, then proxy):**
+
+```ini
+# Proxy rules
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list,PROXY
+# Direct connection rules
+RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list,DIRECT
+# Default rule
+FINAL,PROXY
+```
 
 ## Acknowledgments
 
@@ -50,88 +77,45 @@ Thank you to the following projects for data and contributions:
 [![Stargazers over time](https://starchart.cc/Loyalsoldier/surge-rules.svg)](https://starchart.cc/Loyalsoldier/surge-rules)
 
 <!-- STATS:START -->
-## 规则统计（自动生成）
+## Rule Statistics (Auto-generated)
 
 ### DOMAIN-SET
 
-| 文件 | 条目数 |
+| File | Entries |
 | --- | ---: |
-| \ | 163 |
-| \ | 5637 |
-| \ | 31 |
-| \ | 113092 |
-| \ | 32 |
-| \ | 4252 |
-| \ | 112 |
-| \ | 10 |
-| \ | 52 |
-| \ | 18 |
-| \ | 130 |
-| \ | 26541 |
-| \ | 169994 |
-| \ | 12 |
-| \ | 831 |
+| direct.txt | 163 |
+| proxy.txt | 5637 |
+| cn.txt | 31 |
+| gfwlist.txt | 113092 |
+| greatfire.txt | 32 |
+| piracy.txt | 4252 |
+| private.txt | 112 |
+| localhost.txt | 10 |
+| bogus-nxdomain.txt | 52 |
+| cdn.txt | 18 |
+| apple-cn.txt | 130 |
+| google-cn.txt | 26541 |
+| geolocation-cn.txt | 169994 |
+| geolocation-!cn.txt | 12 |
+| total | 831 |
 
 ### RULE-SET
 
-| 文件 | 条目数 |
+| File | Entries |
 | --- | ---: |
-| \ | 163 |
-| \ | 5637 |
-| \ | 31 |
-| \ | 113092 |
-| \ | 32 |
-| \ | 4252 |
-| \ | 112 |
-| \ | 10 |
-| \ | 52 |
-| \ | 18 |
-| \ | 130 |
-| \ | 26541 |
-| \ | 169994 |
-| \ | 12 |
-| \ | 831 |
-<!-- STATS:END -->
-<!-- STATS:START -->
-## 规则统计（自动生成）
-
-### DOMAIN-SET
-
-| 文件 | 条目数 |
-| --- | ---: |
-| \ | 163 |
-| \ | 5637 |
-| \ | 31 |
-| \ | 113092 |
-| \ | 32 |
-| \ | 4252 |
-| \ | 112 |
-| \ | 10 |
-| \ | 52 |
-| \ | 18 |
-| \ | 130 |
-| \ | 26541 |
-| \ | 169994 |
-| \ | 12 |
-| \ | 831 |
-
-### RULE-SET
-
-| 文件 | 条目数 |
-| --- | ---: |
-| \ | 163 |
-| \ | 5637 |
-| \ | 31 |
-| \ | 113092 |
-| \ | 32 |
-| \ | 4252 |
-| \ | 112 |
-| \ | 10 |
-| \ | 52 |
-| \ | 18 |
-| \ | 130 |
-| \ | 26541 |
-| \ | 169994 |
-| \ | 12 |
-| \ | 831 |
+| direct.list | 163 |
+| proxy.list | 5637 |
+| cn.list | 31 |
+| gfwlist.list | 113092 |
+| greatfire.list | 32 |
+| piracy.list | 4252 |
+| private.list | 112 |
+| localhost.list | 10 |
+| bogus-nxdomain.list | 52 |
+| cdn.list | 18 |
+| apple-cn.list | 130 |
+| google-cn.list | 26541 |
+| geolocation-cn.list | 169994 |
+| geolocation-!cn.list | 12 |
+| total | 831 |
 <!-- STATS:END -->
