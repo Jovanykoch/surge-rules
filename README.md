@@ -84,7 +84,7 @@ Thank you to the following projects for data and contributions:
 | 文件 | 条目数 |
 | --- | ---: |
 | \ | 163 |
-| \ | 3691 |
+| \ | 1 |
 | \ | 5637 |
 | \ | 65 |
 | \ | 113092 |
@@ -105,7 +105,7 @@ Thank you to the following projects for data and contributions:
 | 文件 | 条目数 |
 | --- | ---: |
 | \ | 163 |
-| \ | 3691 |
+| \ | 1 |
 | \ | 5637 |
 | \ | 65 |
 | \ | 113092 |
