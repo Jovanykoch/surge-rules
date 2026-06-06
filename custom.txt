@@ -1,26 +1,65 @@
 # Custom domains for common APIs, CDNs, auth services and statics
 # Covers frequently accessed services not in other rule sets
 
-# Major Cloud Providers APIs
-api.aws.amazon.com
-s3.amazonaws.com
-cloudfront.net
-aws-api.github.com
+# GitHub
+github.com
+api.github.com
+gist.github.com
+githubusercontent.com
+raw.githubusercontent.com
+objects.githubusercontent.com
+release-assets.githubusercontent.com
+githubassets.com
+user-images.githubusercontent.com
+private-user-images.githubusercontent.com
+codeload.github.com
+github.io
+
+# Video & Media Streaming
+youtube.com
+googlevideo.com
+ytimg.com
+
+# Google & Search
+google.com
+googleapis.com
+
+# AI & ML Platforms
+huggingface.co
+replicate.com
+
+# Web Hosting & Deployment
+vercel.app
+vercel.com
+
+# CDN & Package Managers
+jsdelivr.net
+unpkg.com
+cdnjs.com
+cdn.jsdelivr.net
+cdnjs.cloudflare.com
+
+# Cloudflare
+cloudflare.com
+workers.dev
+
+# Music Streaming
+spotify.com
+scdn.co
+spotifycdn.com
+
+# Email Services
+gmail.com
+hotmail.com
+m.hotmail.com
+imap.gmail.com
 
 # Authentication & Security Services
 auth.github.com
-github.com
 firebaseapp.com
 firebase.google.com
-googleapis.com
-
-# CDN & Static Content
-cdn.jsdelivr.net
-cdnjs.cloudflare.com
-unpkg.com
-esm.sh
-esm.dev
-skypack.dev
+font.googleapis.com
+fonts.gstatic.com
 
 # Payment & Analytics
 stripe.com
@@ -28,11 +67,6 @@ stripe.network
 gumroad.com
 amplitude.com
 mixpanel.com
-
-# Design & Graphics
-figma.com
-font.googleapis.com
-fonts.gstatic.com
 
 # Monitoring & Error Tracking
 sentry.io
@@ -43,14 +77,25 @@ datadog.com
 sendgrid.net
 twilio.com
 vonage.com
-
-# Database & Backend Services
-mongodb.com
-supabase.com
-
-# Additional key domains
 api.slack.com
 slack.com
 discord.com
 discordapp.com
 discordcdn.com
+
+# Database & Backend Services
+mongodb.com
+supabase.com
+
+# Major Cloud Providers APIs
+api.aws.amazon.com
+s3.amazonaws.com
+cloudfront.net
+aws-api.github.com
+
+# Design & Graphics
+figma.com
+
+# Personal Domains
+jkoch14.me
+santag.tech
