@@ -36,17 +36,7 @@ livekit.cloud
 accounts.google.com
 googleusercontent.com
 gstatic.com
-google.com
 
 # CDN & Content Delivery
 cdn.shopify.com
 js.stripe.com
-
-# Analytics & Tracking
-amplitude.com
-segment.com
-mixpanel.com
-
-# External Dependencies
-sentry.io
-cloudflare.com
