@@ -26,6 +26,7 @@ jobs:
           echo "custom_openai=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/openai.txt" >> "$GITHUB_ENV"
           echo "custom_dev=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/dev.txt" >> "$GITHUB_ENV"
           echo "custom_edu=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/edu.txt" >> "$GITHUB_ENV"
+          echo "custom_custom=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/custom.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_proxy=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_direct=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt" >> "$GITHUB_ENV"
@@ -93,6 +94,13 @@ jobs:
 
           awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' edu.txt > ruleset/edu.txt
 
+          cp rules/custom.txt custom.txt
+
+          echo "===== CUSTOM ====="
+          cat custom.txt
+
+          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' custom.txt > ruleset/custom.txt
+
           
           curl -sSL "${Loyalsoldier_reject}" -o /tmp/reject.src
           grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' > reject.txt
@@ -158,6 +166,7 @@ jobs:
           normalize_custom rules/openai.txt > /tmp/openai.norm
           normalize_custom rules/dev.txt > /tmp/dev.norm
           normalize_custom rules/edu.txt > /tmp/edu.norm
+          normalize_custom rules/custom.txt > /tmp/custom.norm
 
           compare_conflict() {
             local left="$1"
@@ -175,7 +184,10 @@ jobs:
 
           compare_conflict /tmp/openai.norm /tmp/dev.norm openai dev
           compare_conflict /tmp/openai.norm /tmp/edu.norm openai edu
+          compare_conflict /tmp/openai.norm /tmp/custom.norm openai custom
           compare_conflict /tmp/dev.norm /tmp/edu.norm dev edu
+          compare_conflict /tmp/dev.norm /tmp/custom.norm dev custom
+          compare_conflict /tmp/edu.norm /tmp/custom.norm edu custom
 
       - name: Move files to publish directory
         shell: bash
@@ -250,7 +262,7 @@ jobs:
 
           # Stage generated files first. This avoids git diff failing on paths
           # that may not exist in the current commit yet.
-          git add README.md openai.txt dev.txt edu.txt ruleset/openai.txt ruleset/dev.txt ruleset/edu.txt
+          git add README.md openai.txt dev.txt edu.txt custom.txt ruleset/openai.txt ruleset/dev.txt ruleset/edu.txt ruleset/custom.txt
 
           # Commit only when staged changes exist.
           if git diff --cached --quiet; then
