@@ -93,7 +93,7 @@ Thank you to the following projects for data and contributions:
 | \ | 112 |
 | \ | 10 |
 | \ | 52 |
-| \ | 18 |
+| \ | 26 |
 | \ | 130 |
 | \ | 26541 |
 | \ | 169994 |
@@ -114,7 +114,7 @@ Thank you to the following projects for data and contributions:
 | \ | 112 |
 | \ | 10 |
 | \ | 52 |
-| \ | 18 |
+| \ | 26 |
 | \ | 130 |
 | \ | 26541 |
 | \ | 169994 |
