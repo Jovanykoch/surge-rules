@@ -79,7 +79,7 @@ jobs:
 
           awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' openai.txt > ruleset/openai.txt
 
-          cp rules/dev.txt china.txt
+          cp rules/china.txt china.txt
 
           echo "===== CHINA ====="
           cat china.txt
@@ -262,7 +262,7 @@ jobs:
 
           # Stage generated files first. This avoids git diff failing on paths
           # that may not exist in the current commit yet.
-          git add README.md openai.txt dev.txt edu.txt custom.txt ruleset/openai.txt ruleset/dev.txt ruleset/edu.txt ruleset/custom.txt
+          git add README.md openai.txt china.txt edu.txt custom.txt ruleset/openai.txt ruleset/china.txt ruleset/edu.txt ruleset/custom.txt
 
           # Commit only when staged changes exist.
           if git diff --cached --quiet; then
