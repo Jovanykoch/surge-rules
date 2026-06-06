@@ -24,7 +24,6 @@ chatgpt.livekit.cloud
 host.livekit.cloud
 turn.livekit.cloud
 
-
 # Google login fallback
 accounts.google.com
 googleusercontent.com
