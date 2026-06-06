@@ -35,6 +35,7 @@ spotifycdn.com
 gmail.com
 hotmail.com
 m.hotmail.com
+imap.gmail.com
 
 jkoch14.me
 santag.tech
