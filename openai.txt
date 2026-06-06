@@ -27,13 +27,6 @@ turn.livekit.cloud
 # CSUN / school SSO
 csun.edu
 
-# Microsoft login / university SSO
-login.microsoftonline.com
-microsoftonline.com
-msauth.net
-msftauth.net
-msftidentity.com
-
 # Google login fallback
 accounts.google.com
 googleusercontent.com
