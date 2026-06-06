@@ -1,0 +1,57 @@
+# Custom domains for common APIs, CDNs, auth services and statics
+# Covers frequently accessed services not in other rule sets
+
+# Major Cloud Providers APIs
+api.aws.amazon.com
+s3.amazonaws.com
+cloudfront.net
+aws-api.github.com
+
+# Authentication & Security Services
+auth.github.com
+github.com
+firebase.google.com
+firebaseapp.com
+googleapis.com
+
+# CDN & Static Content
+cdn.jsdelivr.net
+cdnjs.cloudflare.com
+unpkg.com
+esm.sh
+esm.dev
+skypack.dev
+
+# Payment & Analytics
+stripe.com
+stripe.network
+gumroad.com
+amplitude.com
+mixpanel.com
+
+# Design & Graphics
+figma.com
+font.googleapis.com
+fonts.gstatic.com
+
+# Monitoring & Error Tracking
+sentry.io
+bugsnag.com
+datadog.com
+
+# Communication APIs
+sendgrid.net
+twilio.com
+vonage.com
+
+# Database & Backend Services
+firebase.google.com
+mongodb.com
+supabase.com
+
+# Additional key domains
+api.slack.com
+slack.com
+discord.com
+discordapp.com
+discordcdn.com
