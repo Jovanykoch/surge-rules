@@ -26,6 +26,7 @@ featuregates.org
 launchdarkly.com
 
 # ChatGPT Voice & Realtime
+api.statsig.com
 chatgpt.livekit.cloud
 host.livekit.cloud
 turn.livekit.cloud
