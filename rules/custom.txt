@@ -55,7 +55,6 @@ appleworldwidedeveloper.hb-api.omtrdc.net
 appleworldwidedeveloper.sc.omtrdc.net
 as-dash-uk-live.akamaized.net
 as-hls-uk-live.akamaized.net
-asahishimbun.sc.omtrdc.net
 assets.ppy.sh
 audio-ak-spotify-com.akamaized.net
 audio4-ak-spotify-com.akamaized.net
@@ -66,7 +65,6 @@ azuremarketplace.microsoft.com
 bbs.boingboing.net
 bcovlive-a.akamaihd.net
 bcsecure01-a.akamaihd.net
-beatselectronicsllc.tt.omtrdc.net
 beck-online.beck.de
 bingsettingssearch.trafficmanager.net
 blizzard.nefficient.co.kr
@@ -120,7 +118,6 @@ d27xxe7juh1us6.cloudfront.net
 d29vzk4ow07wi7.cloudfront.net
 d2aba1wr3818hz.cloudfront.net
 d2anahhhmp1ffz.cloudfront.net
-d2dylwb3shzel1.cloudfront.net
 d2e2de1etea730.cloudfront.net
 d2nvs31859zcd8.cloudfront.net
 d2um2qdswy1tb0.cloudfront.net
@@ -138,8 +135,6 @@ daily-cloudcode-pa.googleapis.com
 databank.worldbank.org
 database.asahi.com
 datarouter.apps.netherrealm.com
-ddacn6pr5v0tl.cloudfront.net
-default.exp-tas.com
 dell.my.site.com
 deribit.cdn.prismic.io
 deutschewelle.h-cdn.com
@@ -179,7 +174,6 @@ ereg.wip4.adobe.com
 eset-prod-ca48648d0ce7cadf.elb.eu-central-1.amazonaws.com
 espn.api.edge.bamgrid.com
 espn.hb.omtrdc.net
-espndotcom.tt.omtrdc.net
 f3b7q2p3.ssl.hwcdn.net
 fandom.zendesk.com
 faronics.kayako.com
@@ -193,8 +187,6 @@ firebasedynamiclinks-ipv6.googleapis.com
 firebasedynamiclinks.googleapis.com
 firebaseinappmessaging.googleapis.com
 firebaseinstallations.googleapis.com
-firebaselogging-pa.googleapis.com
-firebaselogging.googleapis.com
 firebaseperusertopics-pa.googleapis.com
 firebaseremoteconfig.googleapis.com
 firstsearch.oclc.org
@@ -246,11 +238,9 @@ lgelectronics.122.2o7.net
 licdn.cn.cdn20.com
 linear-abematv.akamaized.net
 link.theplatform.com
-linkedin.sc.omtrdc.net
 live-patreon-marketing.pantheonsite.io
 lm.licenses.adobe.com
 lmlicenses.wip4.adobe.com
-location.microsoft.com
 lolstatic-a.akamaihd.net
 m1.ppy.sh
 mdn.mozillademos.org
@@ -269,7 +259,6 @@ muse.jhu.edu
 mwf-service.akamaized.net
 na1r.services.adobe.com
 nab.demdex.net
-nationalaustraliaban.tt.omtrdc.net
 netflix.com.edgesuite.net
 notary-submissions-prod.s3-accelerate.amazonaws.com
 notary-submissions-prod.s3.us-west-2.amazonaws.com
@@ -468,7 +457,6 @@ scholar.google.si
 scholar.google.sk
 scholar.googleusercontent.com
 scholar.l.google.com
-sentry.ppy.sh
 servd-anthropic-website.b-cdn.net
 sni1dcb6gl.wpc.edgecastcdn.net
 spectator.ppy.sh
@@ -478,8 +466,6 @@ spotify.map.fastlylb.net
 ssl-lvlt.cdn.ea.com
 st-ok-pts.cdn-vk.ru
 st-ok.cdn-vk.ru
-standchartbank.sc.omtrdc.net
-standchartbank.tt.omtrdc.net
 static-hamivideo.cdn.hinet.net
 static.siege-amazon.com
 statics-marketingsites-eas-ms-com.akamaized.net
