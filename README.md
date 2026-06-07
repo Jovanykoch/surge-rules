@@ -85,8 +85,8 @@ Thank you to the following projects for data and contributions:
 | --- | ---: |
 | \ | 163 |
 | \ | 1 |
-| \ | 5637 |
-| \ | 65 |
+| \ | 5787 |
+| \ | 66 |
 | \ | 113025 |
 | \ | 33 |
 | \ | 4252 |
@@ -106,8 +106,8 @@ Thank you to the following projects for data and contributions:
 | --- | ---: |
 | \ | 163 |
 | \ | 1 |
-| \ | 5637 |
-| \ | 65 |
+| \ | 5787 |
+| \ | 66 |
 | \ | 113025 |
 | \ | 33 |
 | \ | 4252 |

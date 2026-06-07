@@ -1,6 +1,7 @@
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,api.github.com
 DOMAIN-SUFFIX,gist.github.com
+DOMAIN-SUFFIX,gist.githubusercontent.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,raw.githubusercontent.com
 DOMAIN-SUFFIX,objects.githubusercontent.com
