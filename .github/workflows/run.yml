@@ -27,6 +27,7 @@ jobs:
           echo "custom_cn=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/cn.txt" >> "$GITHUB_ENV"
           echo "custom_edu=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/edu.txt" >> "$GITHUB_ENV"
           echo "custom_custom=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/custom.txt" >> "$GITHUB_ENV"
+          echo "custom_adblock=https://raw.githubusercontent.com/Jovanykoch/surge-rules/master/rules/adblock.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_proxy=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt" >> "$GITHUB_ENV"
           echo "Loyalsoldier_direct=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt" >> "$GITHUB_ENV"
@@ -101,6 +102,14 @@ jobs:
 
           awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' custom.txt > ruleset/custom.txt
 
+
+          cp rules/adblock.txt adblock.txt
+
+          echo "===== ADBLOCK ====="
+          cat adblock.txt
+
+          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' adblock.txt > ruleset/adblock.txt
+
           
           curl -sSL "${Loyalsoldier_reject}" -o /tmp/reject.src
           grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' > reject.txt
@@ -167,6 +176,7 @@ jobs:
           normalize_custom rules/cn.txt > /tmp/cn.norm
           normalize_custom rules/edu.txt > /tmp/edu.norm
           normalize_custom rules/custom.txt > /tmp/custom.norm
+          normalize_custom rules/adblock.txt > /tmp/adblock.norm
 
           compare_conflict() {
             local left="$1"
@@ -188,6 +198,10 @@ jobs:
           compare_conflict /tmp/cn.norm /tmp/edu.norm cn edu
           compare_conflict /tmp/cn.norm /tmp/custom.norm cn custom
           compare_conflict /tmp/edu.norm /tmp/custom.norm edu custom
+          compare_conflict /tmp/openai.norm /tmp/adblock.norm openai adblock
+          compare_conflict /tmp/cn.norm /tmp/adblock.norm cn adblock
+          compare_conflict /tmp/edu.norm /tmp/adblock.norm edu adblock
+          compare_conflict /tmp/custom.norm /tmp/adblock.norm custom adblock
 
       - name: Move files to publish directory
         shell: bash
@@ -262,7 +276,7 @@ jobs:
 
           # Stage generated files first. This avoids git diff failing on paths
           # that may not exist in the current commit yet.
-          git add README.md openai.txt cn.txt edu.txt custom.txt ruleset/openai.txt ruleset/cn.txt ruleset/edu.txt ruleset/custom.txt
+          git add README.md openai.txt cn.txt edu.txt custom.txt adblock.txt ruleset/openai.txt ruleset/cn.txt ruleset/edu.txt ruleset/custom.txt rulest/adblock.txt
 
           # Commit only when staged changes exist.
           if git diff --cached --quiet; then
