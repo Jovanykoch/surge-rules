@@ -38011,7 +38011,6 @@ j927.statnews.com
 smetrics.statnews.com
 sentry.stats.fm
 sentry.statscore.com
-api.statsig.com
 api.statsigcdn.com
 analytics.statsmachine.eu
 trk.webinstaller.statt-park.de
@@ -44059,5 +44058,4 @@ a.market.xiaomi.com
 t1.market.xiaomi.com
 t17.market.xiaomi.com
 t2.market.xiaomi.com
-t3.market.xiaomi.com
-t4
+t3.market.xiaom

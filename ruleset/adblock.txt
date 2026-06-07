@@ -38011,7 +38011,6 @@ DOMAIN-SUFFIX,j927.statnews.com
 DOMAIN-SUFFIX,smetrics.statnews.com
 DOMAIN-SUFFIX,sentry.stats.fm
 DOMAIN-SUFFIX,sentry.statscore.com
-DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,api.statsigcdn.com
 DOMAIN-SUFFIX,analytics.statsmachine.eu
 DOMAIN-SUFFIX,trk.webinstaller.statt-park.de
@@ -44059,5 +44058,4 @@ DOMAIN-SUFFIX,a.market.xiaomi.com
 DOMAIN-SUFFIX,t1.market.xiaomi.com
 DOMAIN-SUFFIX,t17.market.xiaomi.com
 DOMAIN-SUFFIX,t2.market.xiaomi.com
-DOMAIN-SUFFIX,t3.market.xiaomi.com
-DOMAIN-SUFFIX,t4
+DOMAIN-SUFFIX,t3.market.xiaom
