@@ -5,6 +5,7 @@
 github.com
 api.github.com
 gist.github.com
+gist.githubusercontent.com
 githubusercontent.com
 raw.githubusercontent.com
 objects.githubusercontent.com
