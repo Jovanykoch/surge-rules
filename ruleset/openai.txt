@@ -11,7 +11,6 @@ DOMAIN-SUFFIX,pay.openai.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,launchdarkly.com
