@@ -162,6 +162,9 @@ netease.com
 neteasemusic.me
 lofter.com
 youdao.com
+music.163.com
+interface3.music.163.com
+
 
 mi.com
 xiaomi.com

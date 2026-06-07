@@ -145,6 +145,8 @@ DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,neteasemusic.me
 DOMAIN-SUFFIX,lofter.com
 DOMAIN-SUFFIX,youdao.com
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,interface3.music.163.com
 DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,miui.com
