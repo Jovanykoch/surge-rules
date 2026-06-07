@@ -21,7 +21,6 @@ pay.openai.com
 auth0.com
 arkoselabs.com
 client-api.arkoselabs.com
-api.statsig.com
 events.statsigapi.net
 featuregates.org
 launchdarkly.com
