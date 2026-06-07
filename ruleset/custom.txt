@@ -63,3 +63,6 @@ DOMAIN-SUFFIX,aws-api.github.com
 DOMAIN-SUFFIX,figma.com
 DOMAIN-SUFFIX,jkoch14.me
 DOMAIN-SUFFIX,santag.tech
+
+DOMAIN-KEYWORD,google
+
