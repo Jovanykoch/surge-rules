@@ -309,6 +309,7 @@ osu.ppy.sh
 p-events-delivery.akamaized.net
 packages.microsoft.com
 paper-attachments.s3.amazonaws.com
+pchomeonline.com.tw
 pki.google.com
 play-edge.itunes.apple.com
 poshtestgallery.cloudapp.net
@@ -1997,6 +1998,14 @@ aliassketchbookpro.com
 aliassystems.com
 aliasvisualizationstudio.com
 aliaswavefront.com
+alibabacloud.co.in
+alibabacloud.com
+alibabacloud.com.au
+alibabacloud.com.hk
+alibabacloud.com.my
+alibabacloud.com.sg
+alibabacloud.com.tw
+alicloud.com
 alienware.ae
 alienware.at
 alienware.be
@@ -6498,7 +6507,6 @@ coursehero.com
 coursera-for-business.org
 coursera.community
 coursera.help
-coursera.org
 covenantswatch.org.tw
 coverartarchive.org
 covid19-rx.org
@@ -8206,7 +8214,6 @@ education-cadcam.com
 eduhk.hk
 eduplus.hk
 edx-cdn.org
-edx.org
 eebay.com
 eenike.com
 eesti.ee
@@ -15201,7 +15208,6 @@ microsoft.ca
 microsoft.cat
 microsoft.ch
 microsoft.cl
-microsoft.com
 microsoft.cz
 microsoft.de
 microsoft.dk
@@ -15232,7 +15238,6 @@ microsoft.tv
 microsoft.ua
 microsoft.uz
 microsoft.vn
-microsoft365.com
 microsoftaccountguard.com
 microsoftadc.com
 microsoftadvertising.com
@@ -15269,8 +15274,6 @@ microsoftnewsforkids.org
 microsoftnewskids.com
 microsoftnewskids.net
 microsoftnewskids.org
-microsoftonline-p.com
-microsoftonline.com
 microsoftpartnercommunity.com
 microsoftpartnersolutions.com
 microsoftpersonalcontent.com
@@ -16039,15 +16042,12 @@ ms-studiosmedia.com
 ms365surfaceoffer.com
 ms4dre.com
 msa-it.org
-msauth.net
 mschallenge2018.com
 msdn.com
 msecnd.net
 msedge.net
 msft.info
 msft.net
-msftauth.net
-msftauthimages.net
 msftconnecttest.com
 msfteducation.ca
 msftncsi.com
@@ -17342,9 +17342,7 @@ oekakiskey.com
 oex.com
 offerairjordanlebron.com
 office
-office.com
 office.net
-office365.com
 office365love.com
 office365tw.com
 officeoftibet.com
@@ -17675,7 +17673,6 @@ outdoorpublicsex.com
 outingsapp.com
 outletbeatsshop.com
 outletnike.com
-outlook.com
 over18arcade.com
 overapple.com
 overcast.fm
@@ -24600,7 +24597,6 @@ windows.com
 windows.net
 windows.nl
 windows8.hk
-windowsazure.com
 windowscommunity.net
 windowsmarketplace.com
 windowsphone-int.com
