@@ -1419,8 +1419,6 @@ adanaatikhaber.com
 adaptivecards.io
 adbecrsl.com
 adbkm.com
-adblockcdn.com
-adblockplus.org
 adcex.com
 adcommerce.tv
 addictedtocoffee.de
@@ -2411,7 +2409,6 @@ ankarazirvesi2018.com
 ankb.ru
 ankiuser.net
 ankiweb.net
-anm.co.uk
 annamilk.com
 annas-archive.gd
 annas-archive.gl
@@ -10876,7 +10873,6 @@ gsrc.io
 gstatic-cn.com
 gsuite.com
 gt536.top
-gtm.oasisfeng.com
 gtricks.com
 gtv.org
 gtv1.org
