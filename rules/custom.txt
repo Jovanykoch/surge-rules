@@ -309,6 +309,7 @@ osu.ppy.sh
 p-events-delivery.akamaized.net
 packages.microsoft.com
 paper-attachments.s3.amazonaws.com
+pchomeonline.com.tw
 pki.google.com
 play-edge.itunes.apple.com
 poshtestgallery.cloudapp.net
@@ -3133,7 +3134,6 @@ auricularesbeatsbaratosshop.com
 auricularesbeatsmarkt.com
 auroraoss.com
 ausbeatsbydrdre.com
-auth0.com
 authorxml.com
 authpass.app
 authy.com
@@ -5830,8 +5830,6 @@ charticulator.com
 chat.com
 chat.lmsys.org
 chatango.com
-chatgpt.com
-chatgpt.livekit.cloud
 chatgptvideo.xyz
 chatgptvideob.buzz
 chatpdf.com
@@ -10745,7 +10743,6 @@ googletagservices-cn.com
 googletagservices.com
 googletraveladservices-cn.com
 googletraveladservices.com
-googleusercontent.com
 googlevads-cn.com
 googleventures.com
 googlevideo.com
@@ -10888,7 +10885,6 @@ gshow.com.br
 gslink.us
 gsrc.io
 gstatic-cn.com
-gstatic.com
 gsuite.com
 gt536.top
 gtm.oasisfeng.com
@@ -11624,7 +11620,6 @@ horsedick.net
 horsedicks.net
 horsemecum.com
 horseporn.tv
-host.livekit.cloud
 hostborneo.org
 hostloc.com
 hot-arab-films.com
@@ -17306,9 +17301,7 @@ o365weve.com
 o3o.ca
 o3t.ru
 o3team.ru
-oaistatic.com
 oaistatsig.com
-oaiusercontent.com
 oanda.com
 oanencore.com
 oann.com
@@ -17553,7 +17546,6 @@ op.gg
 op7979.com
 opac-project.eu
 open.firstory.me
-openai.com
 openamt.com
 openapiplatform.com
 openapiservice.com
@@ -22823,7 +22815,6 @@ turborepo.org
 turbotax.com
 turkeyblocks.org
 turkistantimes.com
-turn.livekit.cloud
 turntable.fm
 tusco.ru
 tushy.com
