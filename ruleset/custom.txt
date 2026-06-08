@@ -9006,16 +9006,9 @@ DOMAIN-SUFFIX,.faycbok.com
 DOMAIN-SUFFIX,.fayuanbooks.com
 DOMAIN-SUFFIX,.faz.net
 DOMAIN-SUFFIX,.fb.careers
-DOMAIN-SUFFIX,.fb.com
-DOMAIN-SUFFIX,.fb.gg
-DOMAIN-SUFFIX,.fb.me
-DOMAIN-SUFFIX,.fb.watch
-DOMAIN-SUFFIX,.fbacebook.com
 DOMAIN-SUFFIX,.fbaddins.com
 DOMAIN-SUFFIX,.fbbmarket.com
 DOMAIN-SUFFIX,.fbboostyourbusiness.com
-DOMAIN-SUFFIX,.fbcdn.com
-DOMAIN-SUFFIX,.fbcdn.net
 DOMAIN-SUFFIX,.fbf8.com
 DOMAIN-SUFFIX,.fbfeedback.com
 DOMAIN-SUFFIX,.fbhome.com

@@ -9010,16 +9010,9 @@ zeenews-fonts.s3.amazonaws.com
 .fayuanbooks.com
 .faz.net
 .fb.careers
-.fb.com
-.fb.gg
-.fb.me
-.fb.watch
-.fbacebook.com
 .fbaddins.com
 .fbbmarket.com
 .fbboostyourbusiness.com
-.fbcdn.com
-.fbcdn.net
 .fbf8.com
 .fbfeedback.com
 .fbhome.com
