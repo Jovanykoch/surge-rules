@@ -19,6 +19,8 @@ DOMAIN-SUFFIX,msauthimages.net
 DOMAIN-SUFFIX,msftauth.net
 DOMAIN-SUFFIX,msftauthimages.net
 DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,jjc.instructure.com
+DOMAIN-SUFFIX,canvas.csun.edu
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,blackboard.com
 DOMAIN-SUFFIX,turnitin.com

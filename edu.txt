@@ -19,6 +19,8 @@ msauthimages.net
 msftauth.net
 msftauthimages.net
 instructure.com
+jjc.instructure.com
+canvas.csun.edu
 canvaslms.com
 blackboard.com
 turnitin.com
