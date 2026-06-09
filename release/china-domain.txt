@@ -1,2 +1,0 @@
-# China domain list
-# Generated from ruleset/direct.txt
