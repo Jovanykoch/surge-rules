@@ -4,6 +4,7 @@ jjc.edu
 spokane.edu
 liberty.edu
 login.live.com
+mimecast.com
 windowsazure.com
 microsoft.com
 microsoftonline.com
