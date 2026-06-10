@@ -3,6 +3,7 @@ csun.edu
 jjc.edu
 spokane.edu
 liberty.edu
+www.liberty.edu
 login.live.com
 mimecast.com
 windowsazure.com
