@@ -88,7 +88,7 @@ Thank you to the following projects for data and contributions:
 | \ | 224 |
 | \ | 5711 |
 | \ | 26260 |
-| \ | 112751 |
+| \ | 112653 |
 | \ | 37 |
 | \ | 4252 |
 | \ | 112 |
@@ -96,8 +96,8 @@ Thank you to the following projects for data and contributions:
 | \ | 52 |
 | \ | 26 |
 | \ | 130 |
-| \ | 26705 |
-| \ | 165628 |
+| \ | 26720 |
+| \ | 165955 |
 | \ | 12 |
 | \ | 831 |
 
@@ -110,7 +110,7 @@ Thank you to the following projects for data and contributions:
 | \ | 224 |
 | \ | 5711 |
 | \ | 26260 |
-| \ | 112751 |
+| \ | 112653 |
 | \ | 37 |
 | \ | 4252 |
 | \ | 112 |
@@ -118,8 +118,8 @@ Thank you to the following projects for data and contributions:
 | \ | 52 |
 | \ | 26 |
 | \ | 130 |
-| \ | 26705 |
-| \ | 165628 |
+| \ | 26720 |
+| \ | 165955 |
 | \ | 12 |
 | \ | 831 |
 <!-- STATS:END -->
