@@ -88,7 +88,7 @@ Thank you to the following projects for data and contributions:
 | \ | 224 |
 | \ | 5727 |
 | \ | 26260 |
-| \ | 112274 |
+| \ | 112276 |
 | \ | 37 |
 | \ | 4361 |
 | \ | 112 |
@@ -96,10 +96,10 @@ Thank you to the following projects for data and contributions:
 | \ | 53 |
 | \ | 26 |
 | \ | 130 |
-| \ | 26848 |
-| \ | 165713 |
+| \ | 26842 |
+| \ | 166040 |
 | \ | 12 |
-| \ | 831 |
+| \ | 829 |
 
 ### RULE-SET
 
@@ -110,7 +110,7 @@ Thank you to the following projects for data and contributions:
 | \ | 224 |
 | \ | 5727 |
 | \ | 26260 |
-| \ | 112274 |
+| \ | 112276 |
 | \ | 37 |
 | \ | 4361 |
 | \ | 112 |
@@ -118,8 +118,8 @@ Thank you to the following projects for data and contributions:
 | \ | 53 |
 | \ | 26 |
 | \ | 130 |
-| \ | 26848 |
-| \ | 165713 |
+| \ | 26842 |
+| \ | 166040 |
 | \ | 12 |
-| \ | 831 |
+| \ | 829 |
 <!-- STATS:END -->
