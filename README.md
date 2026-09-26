@@ -76,9 +76,11 @@ For detailed usage instructions of Surge, see the [official manual](https://manu
 
 ```ini
 # Direct connection rules
-RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/direct.txt,DIRECT
 # Proxy rules
-RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/proxy.txt,PROXY
+# Reject ads and trackers
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/reject.txt,REJECT
 # Default rule
 FINAL,DIRECT
 ```
@@ -87,9 +89,11 @@ FINAL,DIRECT
 
 ```ini
 # Proxy rules
-RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/proxy.txt,PROXY
 # Direct connection rules
-RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/direct.txt,DIRECT
+# Reject ads and trackers
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/ruleset/reject.txt,REJECT
 # Default rule
 FINAL,PROXY
 ```
