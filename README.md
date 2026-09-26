@@ -41,12 +41,32 @@ Download from either mirror (replace `{file}` with the file name):
 
 #### RULE-SET:
 
-- **Direct Connection Rules direct.list**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.list](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.list)
-- **Proxy Rules proxy.list**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.list](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.list)
+The same 17 files under the `ruleset/` directory, in Surge rule syntax (`DOMAIN`, `DOMAIN-SUFFIX`, `IP-CIDR`, `IP-CIDR6`):
+
+| File | Description |
+| --- | --- |
+| `ruleset/adblock.txt` | Ad blocking rules |
+| `ruleset/apple.txt` | Apple China services |
+| `ruleset/cn.txt` | China domains (custom) |
+| `ruleset/cncidr.txt` | China IP ranges |
+| `ruleset/custom.txt` | Custom domains |
+| `ruleset/direct.txt` | Direct connection rules |
+| `ruleset/edu.txt` | Education rules (custom) |
+| `ruleset/gfw.txt` | GFWList rules |
+| `ruleset/google.txt` | Google China services |
+| `ruleset/greatfire.txt` | GreatFire blocked domains |
+| `ruleset/icloud.txt` | iCloud services |
+| `ruleset/openai.txt` | OpenAI / AI services (custom) |
+| `ruleset/private.txt` | Private / local domains |
+| `ruleset/proxy.txt` | Proxy rules |
+| `ruleset/reject.txt` | Reject list (ads and trackers) |
+| `ruleset/telegramcidr.txt` | Telegram IP ranges |
+| `ruleset/tld-not-cn.txt` | Non-CN TLDs |
+
+Download from either mirror (replace `{file}` with the file name):
+
+- `https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/{file}`
+- `https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/{file}`
 
 ## Usage Guide
 
