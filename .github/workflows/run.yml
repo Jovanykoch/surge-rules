@@ -219,26 +219,26 @@ jobs:
           stats_file=/tmp/readme-stats.md
           {
             echo '<!-- STATS:START -->'
-            echo '## 规则统计（自动生成）'
+            echo '## Rule Statistics (Auto-generated)'
             echo
             echo '### DOMAIN-SET'
             echo
-            echo '| 文件 | 条目数 |'
+            echo '| File | Entries |'
             echo '| --- | ---: |'
             for file in publish/*.txt; do
               base=$(basename "$file")
               count=$(awk 'NF && $1 !~ /^#/' "$file" | wc -l | awk '{print $1}')
-              echo "| \\`$base\\` | $count |"
+              printf '| `%s` | %s |\n' "$base" "$count"
             done
             echo
             echo '### RULE-SET'
             echo
-            echo '| 文件 | 条目数 |'
+            echo '| File | Entries |'
             echo '| --- | ---: |'
             for file in publish/ruleset/*.txt; do
               base=$(basename "$file")
               count=$(awk 'NF && $1 !~ /^#/' "$file" | wc -l | awk '{print $1}')
-              echo "| \\`$base\\` | $count |"
+              printf '| `%s` | %s |\n' "$base" "$count"
             done
             echo '<!-- STATS:END -->'
           } > "$stats_file"
