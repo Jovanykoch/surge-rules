@@ -77,49 +77,49 @@ Thank you to the following projects for data and contributions:
 [![Stargazers over time](https://starchart.cc/Loyalsoldier/surge-rules.svg)](https://starchart.cc/Loyalsoldier/surge-rules)
 
 <!-- STATS:START -->
-## 规则统计（自动生成）
+## Rule Statistics (Auto-generated)
 
 ### DOMAIN-SET
 
-| 文件 | 条目数 |
+| File | Entries |
 | --- | ---: |
-| \ | 44060 |
-| \ | 165 |
-| \ | 224 |
-| \ | 9612 |
-| \ | 26260 |
-| \ | 111407 |
-| \ | 37 |
-| \ | 4386 |
-| \ | 112 |
-| \ | 10 |
-| \ | 53 |
-| \ | 26 |
-| \ | 130 |
-| \ | 27100 |
-| \ | 192055 |
-| \ | 12 |
-| \ | 829 |
+| `adblock.txt` | 44060 |
+| `apple.txt` | 165 |
+| `cn.txt` | 224 |
+| `cncidr.txt` | 9612 |
+| `custom.txt` | 26260 |
+| `direct.txt` | 111407 |
+| `edu.txt` | 37 |
+| `gfw.txt` | 4386 |
+| `google.txt` | 112 |
+| `greatfire.txt` | 10 |
+| `icloud.txt` | 53 |
+| `openai.txt` | 26 |
+| `private.txt` | 130 |
+| `proxy.txt` | 27100 |
+| `reject.txt` | 192055 |
+| `telegramcidr.txt` | 12 |
+| `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
 
-| 文件 | 条目数 |
+| File | Entries |
 | --- | ---: |
-| \ | 44060 |
-| \ | 165 |
-| \ | 224 |
-| \ | 9612 |
-| \ | 26260 |
-| \ | 111407 |
-| \ | 37 |
-| \ | 4386 |
-| \ | 112 |
-| \ | 10 |
-| \ | 53 |
-| \ | 26 |
-| \ | 130 |
-| \ | 27100 |
-| \ | 192055 |
-| \ | 12 |
-| \ | 829 |
+| `adblock.txt` | 44060 |
+| `apple.txt` | 165 |
+| `cn.txt` | 224 |
+| `cncidr.txt` | 9612 |
+| `custom.txt` | 26260 |
+| `direct.txt` | 111407 |
+| `edu.txt` | 37 |
+| `gfw.txt` | 4386 |
+| `google.txt` | 112 |
+| `greatfire.txt` | 10 |
+| `icloud.txt` | 53 |
+| `openai.txt` | 26 |
+| `private.txt` | 130 |
+| `proxy.txt` | 27100 |
+| `reject.txt` | 192055 |
+| `telegramcidr.txt` | 12 |
+| `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
