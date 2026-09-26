@@ -1,4 +1,4 @@
-# Introduction ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Loyalsoldier/surge-rules/total?logo=github) [![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Loyalsoldier/surge-rules/stats/6m?dynamic=json)](https://www.jsdelivr.com/package/gh/Loyalsoldier/surge-rules)
+# Introduction ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Jovanykoch/surge-rules/total?logo=github) [![jsdelivr stats](https://data.jsdelivr.com/v1/package/gh/Jovanykoch/surge-rules/stats/6m?dynamic=json)](https://www.jsdelivr.com/package/gh/Jovanykoch/surge-rules)
 
 This project generates rule sets (DOMAIN-SET and RULE-SET) for use with [**Surge**](https://nssurge.com). GitHub Actions are used to automatically build the rules daily at 6:30 am Beijing time to ensure accurate and timely data.
 
@@ -15,26 +15,26 @@ The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primaril
 #### DOMAIN-SET:
 
 - **Direct Connection Domain List direct.txt**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.txt)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.txt)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.txt)
 - **Proxy Domain List proxy.txt**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.txt)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.txt)
 - **CN Domain List cn.txt**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cn.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/cn.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cn.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/cn.txt)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/cn.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/cn.txt)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/cn.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/cn.txt)
 - **GFWlist gfwlist.txt**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfwlist.txt](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfwlist.txt)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/gfwlist.txt](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/gfwlist.txt)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/gfwlist.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/gfwlist.txt)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/gfwlist.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/gfwlist.txt)
 
 #### RULE-SET:
 
 - **Direct Connection Rules direct.list**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.list](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/direct.list)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.list](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.list)
 - **Proxy Rules proxy.list**:
-  - [https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list](https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list)
-  - [https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.list](https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.list)
+  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list)
+  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.list](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.list)
 
 ## Usage Guide
 
@@ -44,9 +44,9 @@ For detailed usage instructions of Surge, see the [official manual](https://manu
 
 ```ini
 # Direct connection rules
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list,DIRECT
 # Proxy rules
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list,PROXY
 # Default rule
 FINAL,DIRECT
 ```
@@ -55,9 +55,9 @@ FINAL,DIRECT
 
 ```ini
 # Proxy rules
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.list,PROXY
 # Direct connection rules
-RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.list,DIRECT
 # Default rule
 FINAL,PROXY
 ```
@@ -74,7 +74,7 @@ Thank you to the following projects for data and contributions:
 
 ## Project Star Growth Trend
 
-[![Stargazers over time](https://starchart.cc/Loyalsoldier/surge-rules.svg)](https://starchart.cc/Loyalsoldier/surge-rules)
+[![Stargazers over time](https://starchart.cc/Jovanykoch/surge-rules.svg)](https://starchart.cc/Jovanykoch/surge-rules)
 
 <!-- STATS:START -->
 ## Rule Statistics (Auto-generated)
