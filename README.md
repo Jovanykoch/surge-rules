@@ -14,18 +14,30 @@ The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primaril
 
 #### DOMAIN-SET:
 
-- **Direct Connection Domain List direct.txt**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/direct.txt)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/direct.txt)
-- **Proxy Domain List proxy.txt**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/proxy.txt)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/proxy.txt)
-- **CN Domain List cn.txt**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/cn.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/cn.txt)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/cn.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/cn.txt)
-- **GFWlist gfwlist.txt**:
-  - [https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/gfwlist.txt](https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/gfwlist.txt)
-  - [https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/gfwlist.txt](https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/gfwlist.txt)
+| File | Description |
+| --- | --- |
+| `adblock.txt` | Ad blocking domains |
+| `apple.txt` | Apple China services |
+| `cn.txt` | China domains (custom) |
+| `cncidr.txt` | China IP ranges |
+| `custom.txt` | Custom domains |
+| `direct.txt` | Direct connection domains |
+| `edu.txt` | Education domains (custom) |
+| `gfw.txt` | GFWList domains |
+| `google.txt` | Google China services |
+| `greatfire.txt` | GreatFire blocked domains |
+| `icloud.txt` | iCloud services |
+| `openai.txt` | OpenAI / AI services (custom) |
+| `private.txt` | Private / local domains |
+| `proxy.txt` | Proxy domains |
+| `reject.txt` | Reject list (ads and trackers) |
+| `telegramcidr.txt` | Telegram IP ranges |
+| `tld-not-cn.txt` | Non-CN TLDs |
+
+Download from either mirror (replace `{file}` with the file name):
+
+- `https://raw.githubusercontent.com/Jovanykoch/surge-rules/release/{file}`
+- `https://cdn.jsdelivr.net/gh/Jovanykoch/surge-rules@release/{file}`
 
 #### RULE-SET:
 
