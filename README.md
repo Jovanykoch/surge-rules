@@ -122,18 +122,18 @@ Thank you to the following projects for data and contributions:
 | `adblock.txt` | 44060 |
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
-| `cncidr.txt` | 9621 |
+| `cncidr.txt` | 9648 |
 | `custom.txt` | 26260 |
 | `direct.txt` | 111353 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4391 |
+| `gfw.txt` | 4392 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 10 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27109 |
-| `reject.txt` | 186104 |
+| `reject.txt` | 186434 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 
@@ -144,18 +144,18 @@ Thank you to the following projects for data and contributions:
 | `adblock.txt` | 44060 |
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
-| `cncidr.txt` | 9621 |
+| `cncidr.txt` | 9648 |
 | `custom.txt` | 26260 |
 | `direct.txt` | 111353 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4391 |
+| `gfw.txt` | 4392 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 10 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27109 |
-| `reject.txt` | 186104 |
+| `reject.txt` | 186434 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
