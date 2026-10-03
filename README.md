@@ -126,14 +126,14 @@ Thank you to the following projects for data and contributions:
 | `custom.txt` | 26260 |
 | `direct.txt` | 111353 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4392 |
+| `gfw.txt` | 4393 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 10 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
-| `proxy.txt` | 27109 |
-| `reject.txt` | 186434 |
+| `proxy.txt` | 27110 |
+| `reject.txt` | 186771 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 
@@ -148,14 +148,14 @@ Thank you to the following projects for data and contributions:
 | `custom.txt` | 26260 |
 | `direct.txt` | 111353 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4392 |
+| `gfw.txt` | 4393 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 10 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
-| `proxy.txt` | 27109 |
-| `reject.txt` | 186434 |
+| `proxy.txt` | 27110 |
+| `reject.txt` | 186771 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
