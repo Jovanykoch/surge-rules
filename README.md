@@ -133,7 +133,7 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27111 |
-| `reject.txt` | 187402 |
+| `reject.txt` | 187715 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 
@@ -155,7 +155,7 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27111 |
-| `reject.txt` | 187402 |
+| `reject.txt` | 187715 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
