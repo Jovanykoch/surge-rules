@@ -122,7 +122,6 @@ Thank you to the following projects for data and contributions:
 | `adblock.txt` | 44060 |
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
-| `cncidr.txt` | 9609 |
 | `custom.txt` | 26260 |
 | `direct.txt` | 111724 |
 | `edu.txt` | 37 |
@@ -134,7 +133,6 @@ Thank you to the following projects for data and contributions:
 | `private.txt` | 130 |
 | `proxy.txt` | 27233 |
 | `reject.txt` | 190677 |
-| `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -144,7 +142,6 @@ Thank you to the following projects for data and contributions:
 | `adblock.txt` | 44060 |
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
-| `cncidr.txt` | 9609 |
 | `custom.txt` | 26260 |
 | `direct.txt` | 111724 |
 | `edu.txt` | 37 |
@@ -156,6 +153,5 @@ Thank you to the following projects for data and contributions:
 | `private.txt` | 130 |
 | `proxy.txt` | 27233 |
 | `reject.txt` | 190677 |
-| `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
