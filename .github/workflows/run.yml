@@ -47,6 +47,18 @@ jobs:
           set -euo pipefail
           mkdir -p ruleset
 
+          # Hand-written custom lists -> DOMAIN-SET (root, '.' prefix = suffix match)
+          # and RULE-SET (ruleset/, rule lines pass through untouched).
+          gen_custom() {
+            local src="$1" root="$2" rset="$3"
+            # DOMAIN-SET: keep comments/blank lines, drop rule lines (a domain
+            # file cannot hold rule syntax), prefix plain domains with '.'.
+            awk 'NF==0 {print; next} /^#/ {print; next} /,/ {next} {print "."$0}' "$src" > "$root"
+            # RULE-SET: rule lines (DOMAIN-*, IP-CIDR...) pass through as-is,
+            # plain domains become DOMAIN-SUFFIX,.
+            awk 'NF && $1 !~ /^#/ { if ($0 ~ /,/) print $0; else print "DOMAIN-SUFFIX,"$0 }' "$src" > "$rset"
+          }
+
           curl -sSL "${custom_icloud}" -o /tmp/icloud.src
           awk -F ':' '/^full:/ {print $2}' /tmp/icloud.src > icloud.txt
           awk -F ':' '/^domain:/ {print "."$2}' /tmp/icloud.src >> icloud.txt
@@ -73,47 +85,33 @@ jobs:
           grep -Ev '^(regexp|keyword):' /tmp/proxy.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/proxy.txt
           grep -Ev '^(regexp|keyword|full):' /tmp/proxy.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/proxy.txt
 
-          cp rules/openai.txt openai.txt
-
           echo "===== OPENAI ====="
+          gen_custom rules/openai.txt openai.txt ruleset/openai.txt
           cat openai.txt
 
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' openai.txt > ruleset/openai.txt
-
-          cp rules/cn.txt cn.txt
-
           echo "===== CN ====="
+          gen_custom rules/cn.txt cn.txt ruleset/cn.txt
           cat cn.txt
 
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' cn.txt > ruleset/cn.txt
-
-          cp rules/edu.txt edu.txt
-
           echo "===== EDU ====="
-           
+          gen_custom rules/edu.txt edu.txt ruleset/edu.txt
           cat edu.txt
 
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' edu.txt > ruleset/edu.txt
-
-          cp rules/custom.txt custom.txt
-
           echo "===== CUSTOM ====="
+          gen_custom rules/custom.txt custom.txt ruleset/custom.txt
           cat custom.txt
 
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' custom.txt > ruleset/custom.txt
-
-
-          cp rules/adblock.txt adblock.txt
 
           echo "===== ADBLOCK ====="
+          gen_custom rules/adblock.txt adblock.txt ruleset/adblock.txt
           cat adblock.txt
-
-          awk 'NF && $1 !~ /^#/ {print "DOMAIN-SUFFIX,"$0}' adblock.txt > ruleset/adblock.txt
 
           
           curl -sSL "${Loyalsoldier_reject}" -o /tmp/reject.src
-          grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' > reject.txt
-          grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' > ruleset/reject.txt
+          grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^full:/ {print $2}' > reject.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/reject.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' >> reject.txt
+          grep -Ev '^(regexp|keyword):' /tmp/reject.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/reject.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/reject.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/reject.txt
 
           curl -sSL "${custom_private}" -o /tmp/private.src
           awk -F ':' '/^full:/ {print $2}' /tmp/private.src > private.txt
@@ -122,12 +120,16 @@ jobs:
           awk -F ':' '/^domain:/ {print "DOMAIN-SUFFIX,"$2}' /tmp/private.src >> ruleset/private.txt
 
           curl -sSL "${Loyalsoldier_gfw}" -o /tmp/gfw.src
-          grep -Ev '^(regexp|keyword):' /tmp/gfw.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' > gfw.txt
-          grep -Ev '^(regexp|keyword):' /tmp/gfw.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' > ruleset/gfw.txt
+          grep -Ev '^(regexp|keyword):' /tmp/gfw.src | awk -F ':' '/^full:/ {print $2}' > gfw.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/gfw.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' >> gfw.txt
+          grep -Ev '^(regexp|keyword):' /tmp/gfw.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/gfw.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/gfw.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/gfw.txt
 
           curl -sSL "${Loyalsoldier_greatfire}" -o /tmp/greatfire.src
-          grep -Ev '^(regexp|keyword):' /tmp/greatfire.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' > greatfire.txt
-          grep -Ev '^(regexp|keyword):' /tmp/greatfire.src | awk -F ':' '/^(domain:|full:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' > ruleset/greatfire.txt
+          grep -Ev '^(regexp|keyword):' /tmp/greatfire.src | awk -F ':' '/^full:/ {print $2}' > greatfire.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/greatfire.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "."$NF}' >> greatfire.txt
+          grep -Ev '^(regexp|keyword):' /tmp/greatfire.src | awk -F ':' '/^full:/ {print "DOMAIN,"$2}' > ruleset/greatfire.txt
+          grep -Ev '^(regexp|keyword|full):' /tmp/greatfire.src | awk -F ':' '/^(domain:)?[-_a-zA-Z0-9.]+$/ {print "DOMAIN-SUFFIX,"$NF}' >> ruleset/greatfire.txt
 
           curl -sSL "${custom_tld_not_cn}" -o /tmp/tld-not-cn.src
           awk -F ':' '/^domain:/ {print "."$2}' /tmp/tld-not-cn.src > tld-not-cn.txt
@@ -227,6 +229,9 @@ jobs:
             echo '| --- | ---: |'
             for file in publish/*.txt; do
               base=$(basename "$file")
+              case "$base" in
+                cncidr.txt|telegramcidr.txt) continue ;;
+              esac
               count=$(awk 'NF && $1 !~ /^#/' "$file" | wc -l | awk '{print $1}')
               printf '| `%s` | %s |\n' "$base" "$count"
             done
@@ -237,6 +242,9 @@ jobs:
             echo '| --- | ---: |'
             for file in publish/ruleset/*.txt; do
               base=$(basename "$file")
+              case "$base" in
+                cncidr.txt|telegramcidr.txt) continue ;;
+              esac
               count=$(awk 'NF && $1 !~ /^#/' "$file" | wc -l | awk '{print $1}')
               printf '| `%s` | %s |\n' "$base" "$count"
             done
@@ -319,9 +327,9 @@ jobs:
         shell: bash
         run: |
           cd publish || exit 1
-          for file in $(ls); do
+          for file in *.txt; do
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
           done
-          for file in $(ls ruleset); do
-            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/ruleset/${file}"
+          for file in ruleset/*.txt; do
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/ruleset/$(basename "$file")"
           done

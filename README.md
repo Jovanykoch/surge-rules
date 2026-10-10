@@ -19,7 +19,6 @@ The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primaril
 | `adblock.txt` | Ad blocking domains |
 | `apple.txt` | Apple China services |
 | `cn.txt` | China domains (custom) |
-| `cncidr.txt` | China IP ranges |
 | `custom.txt` | Custom domains |
 | `direct.txt` | Direct connection domains |
 | `edu.txt` | Education domains (custom) |
@@ -31,8 +30,9 @@ The data for the rule sets (DOMAIN-SET and RULE-SET) in this project is primaril
 | `private.txt` | Private / local domains |
 | `proxy.txt` | Proxy domains |
 | `reject.txt` | Reject list (ads and trackers) |
-| `telegramcidr.txt` | Telegram IP ranges |
 | `tld-not-cn.txt` | Non-CN TLDs |
+
+> Note: `cncidr.txt` and `telegramcidr.txt` contain `IP-CIDR` rows, which are not valid in a DOMAIN-SET file — they are only published as RULE-SET (see `ruleset/` below).
 
 Download from either mirror (replace `{file}` with the file name):
 
@@ -130,7 +130,7 @@ Thank you to the following projects for data and contributions:
 | `google.txt` | 112 |
 | `greatfire.txt` | 11 |
 | `icloud.txt` | 53 |
-| `openai.txt` | 26 |
+| `openai.txt` | 25 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27233 |
 | `reject.txt` | 190677 |

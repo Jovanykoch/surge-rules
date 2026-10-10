@@ -30,7 +30,7 @@ coursera.org
 edx.org
 outlook.office365.com
 login.microsoftonline.com
-account.activedirectory.
+account.activedirectory.windowsazure.com
 shibboleth.csun.edu
 duosecurity.com
 duofederal.com
