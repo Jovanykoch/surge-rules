@@ -132,8 +132,8 @@ Thank you to the following projects for data and contributions:
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
-| `proxy.txt` | 27148 |
-| `reject.txt` | 188639 |
+| `proxy.txt` | 27233 |
+| `reject.txt` | 190677 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 
@@ -154,8 +154,8 @@ Thank you to the following projects for data and contributions:
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
-| `proxy.txt` | 27148 |
-| `reject.txt` | 188639 |
+| `proxy.txt` | 27233 |
+| `reject.txt` | 190677 |
 | `telegramcidr.txt` | 12 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
