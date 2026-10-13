@@ -132,7 +132,7 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 25 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27233 |
-| `reject.txt` | 191252 |
+| `reject.txt` | 193298 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -152,6 +152,6 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 26 |
 | `private.txt` | 130 |
 | `proxy.txt` | 27233 |
-| `reject.txt` | 191252 |
+| `reject.txt` | 193298 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
