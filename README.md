@@ -130,9 +130,9 @@ Thank you to the following projects for data and contributions:
 | `greatfire.txt` | 11 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 25 |
-| `private.txt` | 130 |
-| `proxy.txt` | 27239 |
-| `reject.txt` | 194613 |
+| `private.txt` | 132 |
+| `proxy.txt` | 27245 |
+| `reject.txt` | 194969 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -150,8 +150,8 @@ Thank you to the following projects for data and contributions:
 | `greatfire.txt` | 11 |
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
-| `private.txt` | 130 |
-| `proxy.txt` | 27239 |
-| `reject.txt` | 194613 |
+| `private.txt` | 132 |
+| `proxy.txt` | 27245 |
+| `reject.txt` | 194969 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
