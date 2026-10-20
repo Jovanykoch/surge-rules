@@ -131,8 +131,8 @@ Thank you to the following projects for data and contributions:
 | `icloud.txt` | 53 |
 | `openai.txt` | 25 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27257 |
-| `reject.txt` | 195302 |
+| `proxy.txt` | 27262 |
+| `reject.txt` | 197553 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -151,7 +151,7 @@ Thank you to the following projects for data and contributions:
 | `icloud.txt` | 53 |
 | `openai.txt` | 26 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27257 |
-| `reject.txt` | 195302 |
+| `proxy.txt` | 27262 |
+| `reject.txt` | 197553 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
