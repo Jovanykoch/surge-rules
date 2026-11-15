@@ -123,7 +123,7 @@ Thank you to the following projects for data and contributions:
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
 | `custom.txt` | 26260 |
-| `direct.txt` | 110288 |
+| `direct.txt` | 110239 |
 | `edu.txt` | 37 |
 | `gfw.txt` | 4453 |
 | `google.txt` | 112 |
@@ -132,7 +132,7 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 25 |
 | `private.txt` | 132 |
 | `proxy.txt` | 27352 |
-| `reject.txt` | 200344 |
+| `reject.txt` | 200708 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -143,7 +143,7 @@ Thank you to the following projects for data and contributions:
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
 | `custom.txt` | 26260 |
-| `direct.txt` | 110288 |
+| `direct.txt` | 110239 |
 | `edu.txt` | 37 |
 | `gfw.txt` | 4453 |
 | `google.txt` | 112 |
@@ -152,6 +152,6 @@ Thank you to the following projects for data and contributions:
 | `openai.txt` | 26 |
 | `private.txt` | 132 |
 | `proxy.txt` | 27352 |
-| `reject.txt` | 200344 |
+| `reject.txt` | 200708 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
