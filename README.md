@@ -123,16 +123,16 @@ Thank you to the following projects for data and contributions:
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
 | `custom.txt` | 26260 |
-| `direct.txt` | 110247 |
+| `direct.txt` | 110250 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4453 |
+| `gfw.txt` | 4481 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 12 |
 | `icloud.txt` | 52 |
 | `openai.txt` | 25 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27359 |
-| `reject.txt` | 200748 |
+| `proxy.txt` | 27248 |
+| `reject.txt` | 201108 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -143,15 +143,15 @@ Thank you to the following projects for data and contributions:
 | `apple.txt` | 165 |
 | `cn.txt` | 224 |
 | `custom.txt` | 26260 |
-| `direct.txt` | 110247 |
+| `direct.txt` | 110250 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4453 |
+| `gfw.txt` | 4481 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 12 |
 | `icloud.txt` | 52 |
 | `openai.txt` | 26 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27359 |
-| `reject.txt` | 200748 |
+| `proxy.txt` | 27248 |
+| `reject.txt` | 201108 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
