@@ -125,14 +125,14 @@ Thank you to the following projects for data and contributions:
 | `custom.txt` | 26260 |
 | `direct.txt` | 110250 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4481 |
+| `gfw.txt` | 4484 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 12 |
 | `icloud.txt` | 52 |
 | `openai.txt` | 25 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27288 |
-| `reject.txt` | 204388 |
+| `proxy.txt` | 27293 |
+| `reject.txt` | 204783 |
 | `tld-not-cn.txt` | 829 |
 
 ### RULE-SET
@@ -145,13 +145,13 @@ Thank you to the following projects for data and contributions:
 | `custom.txt` | 26260 |
 | `direct.txt` | 110250 |
 | `edu.txt` | 37 |
-| `gfw.txt` | 4481 |
+| `gfw.txt` | 4484 |
 | `google.txt` | 112 |
 | `greatfire.txt` | 12 |
 | `icloud.txt` | 52 |
 | `openai.txt` | 26 |
 | `private.txt` | 132 |
-| `proxy.txt` | 27288 |
-| `reject.txt` | 204388 |
+| `proxy.txt` | 27293 |
+| `reject.txt` | 204783 |
 | `tld-not-cn.txt` | 829 |
 <!-- STATS:END -->
